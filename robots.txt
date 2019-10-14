@@ -1,1 +1,1 @@
-Sitemap: http://localhost:4000/orgco_server/sitemap.xml
+Sitemap: /orgco_server/sitemap.xml
