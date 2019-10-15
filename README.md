@@ -21,8 +21,8 @@
   * [Boostrap 4.3.1](https://github.com/twbs/bootstrap-rubygem/tree/master/assets/javascripts/bootstrap).
   * [Jquery 3.4.1 slim build](https://jquery.com/download).
 
-### How to deploy to server repo
-* Generate script.js file.
+### How to deploy to server
+* Generate script.js file. SKIP if no Javascript code added.
   * Use [UglifyJS](https://github.com/mishoo/UglifyJS2).
   * Run `uglifyjs --compress --mangle --output assets/javascripts/script.js -- {file_1} {file_2}`.
 * Generate server files using source repo.
@@ -33,6 +33,11 @@
   * Run `git -C {server_repo_root_dir} commit -am build`.
   * Run `git -C {server_repo_root_dir} push`.
 
-### How to change via pull request
-* TBA
-
+### How to modify files
+* Author: Fork source repo.
+* Author: Commit changes.
+* Author: Create pull request.
+* Owner: Merge and squash commits for pull request.
+* Owner: Pull source repo.
+  * Run `git pull`.
+* Owner: Deploy as per [instructions](https://github.com/ianooi/orgco#how-to-deploy-to-server-repo).
