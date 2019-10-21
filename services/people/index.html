@@ -29,9 +29,9 @@
 <meta property="og:description" content="People development is not a topic founders always think about, but is one that’s critical to their business’ success. As a result, as companies grow, a mistake often made is promoting people who are not ready to be managers." />
 <meta property="og:site_name" content="MeshWork" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2019-10-20T17:33:49+08:00" />
+<meta property="article:published_time" content="2019-10-21T08:55:12+08:00" />
 <script type="application/ld+json">
-{"description":"People development is not a topic founders always think about, but is one that’s critical to their business’ success. As a result, as companies grow, a mistake often made is promoting people who are not ready to be managers.","@type":"BlogPosting","headline":"People","dateModified":"2019-10-20T17:33:49+08:00","url":"/orgco_server/services/people/","datePublished":"2019-10-20T17:33:49+08:00","mainEntityOfPage":{"@type":"WebPage","@id":"/orgco_server/services/people/"},"@context":"https://schema.org"}</script>
+{"description":"People development is not a topic founders always think about, but is one that’s critical to their business’ success. As a result, as companies grow, a mistake often made is promoting people who are not ready to be managers.","@type":"BlogPosting","url":"/orgco_server/services/people/","headline":"People","dateModified":"2019-10-21T08:55:12+08:00","datePublished":"2019-10-21T08:55:12+08:00","mainEntityOfPage":{"@type":"WebPage","@id":"/orgco_server/services/people/"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 </head>
     <body><section id="header" class="header bg-orange fg-light">
@@ -108,6 +108,13 @@
 
     <script>
         var form_submitted = false;
+        window.addEventListener("load", function () {
+            var ga_id = false;
+            ga(function (tracker) {
+                ga_id = tracker.get('clientId');
+            });
+            document.getElementById('ga_id').value = ga_id || 'undefined';
+        });
     </script><iframe name="hidden_iframe" style="display:none;"
             onload="if (form_submitted) { window.location='/orgco_server/subscribe-success/'; }"></iframe>
 
@@ -116,7 +123,9 @@
           target="hidden_iframe" method="post" onsubmit="form_submitted = true;">
 
         <input type="hidden" name="entry.364363688"
-               value="subscribe"><div>
+               value="subscribe">
+
+        <input id="ga_id" type="hidden" name="entry.1009112319"><div>
                 <input type="text" name="entry.331755147"
                        placeholder="Your Name" required>
             </div><div>
