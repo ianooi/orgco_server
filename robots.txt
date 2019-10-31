@@ -1,1 +1,1 @@
-Sitemap: /orgco_server/sitemap.xml
+Sitemap: /sitemap.xml
